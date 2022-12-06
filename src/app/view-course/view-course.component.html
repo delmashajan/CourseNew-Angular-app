@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row mt-4">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">courseTitle</th>
+                <th scope="col">courseDescription</th>
+                <th scope="col">courseDuration</th>
+                <th scope="col">courseDate</th>
+                <th scope="col">courseVenue</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor = "let i of course">
+                
+                <td>{{i._id}}</td>
+                <td>{{i.courseTitle}}</td>
+                <td>{{i.courseDescription}}</td>
+                <td>{{i.cduration}}</td>
+                <td>{{i.courseDate}}</td>
+                <td>{{i.courseVenue}}</td>
+                
+              </tr>
+              
+            </tbody>
+          </table>
+    </div>
+</div>
